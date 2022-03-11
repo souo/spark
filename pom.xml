@@ -127,7 +127,7 @@
     <slf4j.version>1.7.10</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <hadoop.version>2.2.0</hadoop.version>
-    <protobuf.version>2.5.0</protobuf.version>
+    <protobuf.version>3.16.1</protobuf.version>
     <yarn.version>${hadoop.version}</yarn.version>
     <hbase.version>0.98.7-hadoop2</hbase.version>
     <hbase.artifact>hbase</hbase.artifact>
@@ -149,7 +149,7 @@
     <ivy.version>2.4.0</ivy.version>
     <oro.version>2.0.8</oro.version>
     <codahale.metrics.version>3.1.2</codahale.metrics.version>
-    <avro.version>1.7.7</avro.version>
+    <avro.version>1.11.0</avro.version>
     <avro.mapred.classifier>hadoop2</avro.mapred.classifier>
     <jets3t.version>0.7.1</jets3t.version>
     <aws.java.sdk.version>1.9.16</aws.java.sdk.version>
@@ -168,7 +168,7 @@
     <snappy.version>1.1.1.7</snappy.version>
     <netlib.java.version>1.1.2</netlib.java.version>
     <calcite.version>1.2.0-incubating</calcite.version>
-    <commons-codec.version>1.10</commons-codec.version>
+    <commons-codec.version>1.13</commons-codec.version>
     <!-- org.apache.commons/commons-lang/-->
     <commons-lang2.version>2.6</commons-lang2.version>
     <!-- org.apache.commons/commons-lang3/-->
@@ -182,7 +182,7 @@
     <libthrift.version>0.9.2</libthrift.version>
 
     <test.java.home>${java.home}</test.java.home>
-    <test.exclude.tags></test.exclude.tags>
+    <test.exclude.tags/>
 
     <!--
       Dependency scopes that can be overridden by enabling certain profiles. These profiles are
@@ -2076,7 +2076,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2089,7 +2089,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2102,7 +2102,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -2240,7 +2240,7 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/tmp" />
+                <mkdir dir="${project.build.directory}/tmp"/>
               </target>
             </configuration>
           </execution>
@@ -2366,7 +2366,7 @@
       <id>hadoop-1</id>
       <properties>
         <hadoop.version>1.2.1</hadoop.version>
-        <protobuf.version>2.4.1</protobuf.version>
+        <protobuf.version>3.16.1</protobuf.version>
         <hbase.version>0.98.7-hadoop1</hbase.version>
         <avro.mapred.classifier>hadoop1</avro.mapred.classifier>
         <codehaus.jackson.version>1.8.8</codehaus.jackson.version>
